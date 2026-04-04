@@ -6,12 +6,12 @@
 
 <title>Best Betting Site In Bangladesh</title>
 
-<meta name="description" content="Promo Code:  - Claim your bonus instantly!">
-<meta name="keywords" content="1xBet, Linebet, Melbet, betting, casino, bonus">
+<meta name="description" content="Promo Code: TANG73 - Claim your bonus instantly!">
+<meta name="keywords" content="1xBet, Pro Bet, betting, casino, bonus">
 
 <meta name="google-site-verification" content="hu3VDQBOxTW_utPUJZ9wCzrThbNnx0Pc3oAeGv5kBb8"/>
 
-<meta property="og:title" content="Register 1xBet, Linebet, Melbet">
+<meta property="og:title" content="Register 1xBet, Pro Bet">
 <meta property="og:description" content="Claim your bonus instantly via our official links!">
 <meta property="og:image" content="https:///preview.png">
 <meta property="og:url" content="https://">
@@ -19,559 +19,190 @@
 
 <meta name="twitter:card" content="summary_large_image">
 
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+body{background:#0f172a;color:#fff;}
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+/* ========== HEADER ========== */
+.header-wrapper{
+    position: relative;
+    z-index: 100;
 }
+.top-bar{
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(59, 130, 246, 0.3);
+    padding: 12px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.logo-img{height:40px;}
+.admin-status{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    gap:6px;
+}
+.online-indicator{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    background: rgba(16,185,129,0.15);
+    padding:5px 10px;
+    border-radius:30px;
+    border:1px solid rgba(16,185,129,0.3);
+}
+.online-dot{
+    width:8px;height:8px;background:#10b981;border-radius:50%;
+    animation:pulse 1.5s infinite;
+}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.4;}}
+.online-text{color:#f1f5f9;font-size:12px;}
+.contact-link{
+    display:flex;align-items:center;gap:6px;
+    background: rgba(37,211,102,0.15);
+    padding:5px 10px;border-radius:30px;text-decoration:none;
+    transition:0.3s;
+}
+.contact-link i{color:#25d366;font-size:14px;}
+.contact-link span{color:#f1f5f9;font-size:12px;}
+.contact-link:hover{background: rgba(37,211,102,0.3);}
 
-body{
-background:#0f172a;
-color:#fff;
-}
+/* Marquee */
+.marquee {width:100%;background:#020617;overflow:hidden;position:relative;height:24px;display:flex;align-items:center;}
+.marquee-content{white-space:nowrap;color:#38bdf8;font-size:12px;font-weight:bold;position:absolute;animation:scrollText 20s linear infinite;}
+@keyframes scrollText{0%{left:100%;}100%{left:-100%;}}
 
-header{
-background:#111827;
-padding:10px;
-text-align:center;
-font-size:22px;
-font-weight:bold;
-color:#38bdf8;
-}
-  .marquee {
-  width: 100%;
-  background: #020617;
-  overflow: hidden;
-  position: relative;
-  height: 24px;
-  display: flex;
-  align-items: center;
-}
-
-.marquee-content {
-  white-space: nowrap;
-  color: #38bdf8;
-  font-size: 12px;
-  font-weight: bold;
-  position: absolute;
-  animation: scrollText 20s linear infinite;
-}
-
-@keyframes scrollText {
-  0% {
-    left: 100%;
-  }
-  100% {
-    left: -100%;
-  }
-}
-.top-ad{
-background:#1e293b;
-text-align:center;
-padding:10px;
-font-size:14px;
-}
-
-.container{
-padding:15px;
-}
-
+/* Cards */
+.container{padding:15px;}
 .card{
-background:#1e293b;
-margin-bottom:20px;
-padding:20px;
-border-radius:10px;
-text-align:center;
-box-shadow:0 0 10px rgba(0,0,0,0.4);
-transition:0.3s;
-position:relative;
+background:#1e293b;margin-bottom:20px;padding:20px;border-radius:10px;text-align:center;box-shadow:0 0 10px rgba(0,0,0,0.4);transition:0.3s;position:relative;
 }
+.card:hover{transform:scale(1.03);}
+.site-logo{width:160px;border-radius:14px;display:block;margin:auto;margin-bottom:10px;}
+.card p{font-size:14px;}
+.btn{display:inline-block;margin-top:10px;padding:10px 20px;background:#38bdf8;color:#000;text-decoration:none;font-weight:bold;border-radius:6px;animation:pulse 1.5s infinite;}
+@keyframes pulse{0%{box-shadow:0 0 5px #38bdf8;}50%{box-shadow:0 0 20px #38bdf8;}100%{box-shadow:0 0 5px #38bdf8;}}
+.recommend-corner{position:absolute;top:10px;right:10px;background:#ef4444;color:#fff;padding:6px 12px;border-radius:12px;font-weight:bold;font-size:12px;}
 
-.card:hover{
-transform:scale(1.03);
-}
+/* Agent Section */
+.agent-section{background:#1e293b;padding:20px;border-radius:12px;text-align:center;margin-top:20px;box-shadow:0 0 10px rgba(0,0,0,0.4);}
+.agent-section h2{margin-bottom:10px;color:#38bdf8;}
+.agent-text{font-size:14px;margin-bottom:18px;line-height:1.6;}
+.payment-icons{display:flex;justify-content:center;gap:25px;margin-bottom:20px;}
+.pay{text-align:center;}
+.pay img{width:45px;height:45px;border-radius:10px;display:block;margin:auto;}
+.pay span{font-size:13px;display:block;margin-top:6px;color:#ffffff;font-weight:bold;}
+.agent-buttons{display:flex;flex-direction:column;gap:10px;}
+.agent-btn{padding:12px;background:#22c55e;color:#fff;text-decoration:none;font-weight:bold;border-radius:8px;box-shadow:0 0 10px rgba(0,0,0,0.4);transition:0.3s;}
+.agent-btn.telegram{background:#3b82f6;}
+.agent-btn:hover{opacity:0.9;}
 
-.site-logo{
-width:160px;
-border-radius:14px;
-display:block;
-margin:auto;
-margin-bottom:10px;
-}
+/* FAQ */
+.faq-section{background:#1e293b;padding:20px;border-radius:12px;margin-top:20px;color:#fff;}
+.faq-section h2{text-align:center;margin-bottom:15px;color:#38bdf8;}
+.faq-item{margin-bottom:10px;}
+.faq-question{background:#0f172a;padding:12px;border-radius:8px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;}
+.arrow{transition:0.3s;}
+.faq-answer{display:none;padding:10px;margin-top:5px;background:#020617;border-radius:8px;}
 
-.card p{
-font-size:14px;
-}
+/* Share bar */
+.share-bar{display:flex;justify-content:center;align-items:center;gap:12px;margin:15px 0;padding:8px 10px;background:#111827;border-radius:10px;}
+.share-text{color:#fff;font-size:14px;font-weight:bold;}
+.share-bar .share{width:38px;height:38px;border-radius:50%;display:flex;justify-content:center;align-items:center;transition:transform 0.2s;}
+.share-bar .share:hover{transform:scale(1.1);}
+.share-bar .share img{width:24px;height:24px;}
 
-.btn{
-display:inline-block;
-margin-top:10px;
-padding:10px 20px;
-background:#38bdf8;
-color:#000;
-text-decoration:none;
-font-weight:bold;
-border-radius:6px;
-animation:pulse 1.5s infinite;
-}
+/* Live Chat */
+.live-chat-btn{position: fixed;bottom: 20px;right: 20px;background:#38bdf8;color:#000;padding:10px 15px;border-radius:8px;font-weight:bold;box-shadow:0 0 10px rgba(0,0,0,0.5);cursor:pointer;z-index:999;transition:0.3s;}
+.live-chat-btn:hover{transform: scale(1.05);box-shadow:0 0 15px rgba(0,0,0,0.7);}
+.live-chat-popup{display:none;position: fixed;bottom: 80px;right: 20px;width: 280px;background: #1e293b;color: #fff;border-radius: 10px;box-shadow:0 0 15px rgba(0,0,0,0.5);z-index: 1000;overflow: hidden;}
+.chat-header{background:#111827;padding:10px;font-weight:bold;display:flex;justify-content:space-between;align-items:center;}
+.chat-close{cursor:pointer;}
+.chat-body{padding:10px;}
+.chat-body button{width:100%;margin:5px 0;padding:8px 10px;border:none;border-radius:6px;background:#d6093f;color:#000;font-weight:bold;cursor:pointer;transition:0.3s;}
+.chat-body button:hover{background:#0ea5e9;}
+.chat-reply{margin-top:10px;padding:8px;border-radius:6px;min-height:30px;text-align:center;display:flex;justify-content:space-around;}
+.chat-link{background:#25D366;color:#fff;padding:6px 12px;border-radius:6px;text-decoration:none;font-weight:bold;transition:0.3s;}
+.chat-link:nth-child(2){background:#0088cc;}
+.chat-link:hover{opacity:0.8;}
 
-@keyframes pulse{
-0%{box-shadow:0 0 5px #38bdf8;}
-50%{box-shadow:0 0 20px #38bdf8;}
-100%{box-shadow:0 0 5px #38bdf8;}
-}
-
-.recommend-corner{
-position:absolute;
-top:10px;
-right:10px;
-background:#ef4444;
-color:#fff;
-padding:6px 12px;
-border-radius:12px;
-font-weight:bold;
-font-size:12px;
-}
-footer{
-text-align:center;
-padding:15px;
-background:#111827;
-font-size:14px;
-margin-top:20px;
-}
-
-#banner-slider{
-max-width:1000px;
-margin:20px auto;
-position:relative;
-overflow:hidden;
-border-radius:12px;
-}
-
-#banner-slider .slides > a{
-display:none;
-}
-
-#banner-slider .slides > a.active{
-display:block;
-}
-
-.agent-section{
-background:#1e293b;
-padding:20px;
-border-radius:12px;
-text-align:center;
-margin-top:20px;
-box-shadow:0 0 10px rgba(0,0,0,0.4);
-color:#ffffff;
-}
-
-.agent-section h2{
-margin-bottom:10px;
-color:#38bdf8;
-}
-
-.agent-text{
-font-size:14px;
-margin-bottom:18px;
-line-height:1.6;
-}
-
-.payment-icons{
-display:flex;
-justify-content:center;
-gap:25px;
-margin-bottom:20px;
-}
-
-.pay{
-text-align:center;
-}
-
-.pay img{
-width:45px;
-height:45px;
-border-radius:10px;
-display:block;
-margin:auto;
-}
-
-.pay span{
-font-size:13px;
-display:block;
-margin-top:6px;
-color:#ffffff;
-font-weight:bold;
-}
-
-.agent-buttons{
-display:flex;
-flex-direction:column;
-gap:10px;
-}
-
-.agent-btn{
-padding:12px;
-background:#22c55e;
-color:#fff;
-text-decoration:none;
-font-weight:bold;
-border-radius:8px;
-box-shadow:0 0 10px rgba(0,0,0,0.4);
-transition:0.3s;
-}
-
-.agent-btn.telegram{
-background:#3b82f6;
-}
-
-.agent-btn:hover{
-opacity:0.9;
-}
-
-  .faq-section{
-background:#1e293b;
-padding:20px;
-border-radius:12px;
-margin-top:20px;
-color:#fff;
-}
-
-.faq-section h2{
-text-align:center;
-margin-bottom:15px;
-color:#38bdf8;
-}
-
-.faq-item{
-margin-bottom:10px;
-}
-
-.faq-question{
-background:#0f172a;
-padding:12px;
-border-radius:8px;
-cursor:pointer;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.arrow{
-transition:0.3s;
-}
-
-.faq-answer{
-display:none;
-padding:10px;
-margin-top:5px;
-background:#020617;
-border-radius:8px;
-}
-  .share-bar{
-display:flex;
-justify-content:center;
-align-items:center;
-gap:12px;
-margin:15px 0;
-padding:8px 10px;
-background:#111827;
-border-radius:10px;
-}
-
-.share-text{
-color:#fff;
-font-size:14px;
-font-weight:bold;
-}
-
-.share-bar .share{
-width:38px;
-height:38px;
-border-radius:50%;
-display:flex;
-justify-content:center;
-align-items:center;
-transition:transform 0.2s;
-}
-
-.share-bar .share:hover{
-transform:scale(1.1);
-}
-
-.share-bar .share img{
-width:24px;
-height:24px;
-}
-
-  .live-chat-btn{
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background:#38bdf8;
-  color:#000;
-  padding:10px 15px;
-  border-radius:8px;
-  font-weight:bold;
-  box-shadow:0 0 10px rgba(0,0,0,0.5);
-  cursor:pointer;
-  z-index:999;
-  transition:0.3s;
-}
-.live-chat-btn:hover{
-  transform: scale(1.05);
-  box-shadow:0 0 15px rgba(0,0,0,0.7);
-}
-
-.live-chat-popup{
-  display:none;
-  position: fixed;
-  bottom: 80px;
-  right: 20px;
-  width: 280px;
-  background: #1e293b;
-  color: #fff;
-  border-radius: 10px;
-  box-shadow:0 0 15px rgba(0,0,0,0.5);
-  z-index: 1000;
-  overflow: hidden;
-}
-
-.chat-header{
-  background:#111827;
-  padding:10px;
-  font-weight:bold;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-
-.chat-close{
-  cursor:pointer;
-}
-
-.chat-body{
-  padding:10px;
-}
-
-.chat-body button{
-  width:100%;
-  margin:5px 0;
-  padding:8px 10px;
-  border:none;
-  border-radius:6px;
-  background:#d6093f;
-  color:#000;
-  font-weight:bold;
-  cursor:pointer;
-  transition:0.3s;
-}
-.chat-body button:hover{
-  background:#0ea5e9;
-}
-
-.chat-reply{
-  margin-top:10px;
-  padding:8px;
-  border-radius:6px;
-  min-height:30px;
-  text-align:center;
-  display:flex;
-  justify-content:space-around;
-}
-
-.chat-link{
-  background:#25D366; /* WhatsApp green for WhatsApp, Telegram blue for Telegram */
-  color:#fff;
-  padding:6px 12px;
-  border-radius:6px;
-  text-decoration:none;
-  font-weight:bold;
-  transition:0.3s;
-}
-.chat-link:nth-child(2){
-  background:#0088cc; /* Telegram blue */
-}
-.chat-link:hover{
-  opacity:0.8;
-}
-  .wa-popup{
-position:fixed;
-bottom:20px;
-left: 20px;
-display:none;
-align-items:center;
-flex-direction: row-reverse;
-gap:10px;
-z-index:999;
-}
-
-.wa-message{
-background:#25D366;
-color:#fff;
-padding:10px 14px;
-border-radius:20px;
-font-size:13px;
-box-shadow:0 0 10px rgba(0,0,0,0.3);
-}
-
-.wa-popup img{
-width:55px;
-height:55px;
-border-radius:50%;
-box-shadow:0 0 10px rgba(0,0,0,0.4);
-animation:waPulse 1.5s infinite;
-cursor:pointer;
-}
-
-@keyframes waPulse{
-0%{transform:scale(1);}
-50%{transform:scale(1.1);}
-100%{transform:scale(1);}
-}
+/* WhatsApp Popup */
+.wa-popup{position:fixed;bottom:20px;left: 20px;display:none;align-items:center;flex-direction: row-reverse;gap:10px;z-index:999;}
+.wa-message{background:#25D366;color:#fff;padding:10px 14px;border-radius:20px;font-size:13px;box-shadow:0 0 10px rgba(0,0,0,0.3);}
+.wa-popup img{width:55px;height:55px;border-radius:50%;box-shadow:0 0 10px rgba(0,0,0,0.4);animation:waPulse 1.5s infinite;cursor:pointer;}
+@keyframes waPulse{0%{transform:scale(1);}50%{transform:scale(1.1);}100%{transform:scale(1);}}
 </style>
-
-<!-- FB Pixel -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-
-fbq('init','YOUR_PIXEL_ID');
-fbq('track','PageView');
-</script>
 
 </head>
 
 <body>
 
-<header>Tangail Club</header>
+<!-- ========== HEADER ========== -->
+<div class="header-wrapper">
+    <div class="top-bar">
+        <div class="logo-area">
+            <img src="logo.png" alt="Logo" class="logo-img">
+        </div>
+        <div class="admin-status">
+            <div class="online-indicator">
+                <span class="online-dot"></span>
+                <span class="online-text">Admin Online</span>
+            </div>
+            <a href="https://wa.me/8801826444505" target="_blank" class="contact-link">
+                <i class="fab fa-whatsapp"></i>
+                <span>01826444505</span>
+            </a>
+        </div>
+    </div>
+</div>
 
-  <div class="marquee">
+<!-- Marquee -->
+<div class="marquee">
   <div class="marquee-content">
-    🔥 Promo Code:  TANG73 🎁 100% Bonus | 💸 Fast Deposit & Withdraw | 🚀 Join Now Now | 01826444505 imo Whatsapp 
+    🔥 Promo Code: TANG73 🎁 100% Bonus | 💸 Fast Deposit & Withdraw | 🚀 Join Now | 01826444505 WhatsApp
   </div>
 </div>
 
-<!-- Banner Slider -->
-<div id="banner-slider">
-<div class="slides">
-
-<a href="my link" target="_blank">
-<img src="ipl.jpeg" style="width:100%">
-</a>
-
-<a href="my link" target="_blank">
-<img src="psl.jpeg" style="width:100%">
-</a>
-
-<a href="link" target="_blank">
-<img src="melbet-banner.png" style="width:100%">
-</a>
-
-</div>
-</div>
-
-<div class="top-ad">
-🌟 আপনার পছন্দের সাইটে লগইন করুন🌟
-</div>
-
+<!-- Banner / Screenshot above FAQ -->
 <div class="container">
-
-<!-- 1xBet -->
-<div class="card">
-
-<img src="1xbet-logo.jpg" class="site-logo">
-
-<p>Promo Code: TANG73 </p>
-
-<a class="btn" href="mylink" target="_blank">
-👉 Sign Up 
-</a>
-
-<div class="recommend-corner">King👑</div>
-
+    <div class="card">
+        <img src="screenshot.jpg" style="width:100%; border-radius:12px;" alt="Screenshot Preview">
+    </div>
 </div>
 
-<!-- Probet -->
-<div class="card">
-
-<img src="probet.logo.jpg" class="site-logo">
-
-<p> Promo Code: TANG73</p>
-
-<a class="btn" href="mylink" target="_blank">
-👉 Sign Up 
-</a>
-
-<div class="recommend-corner">Best🫰</div>
-
-</div>
-
-
-<h2>💳 Agent Deposit Service</h2>
-
-<p class="agent-text">
-bKash / Nagad / Rocket এর মাধ্যমে আমাদের <b>Verified Agent</b> দিয়ে সহজে Deposit ও Withdraw করতে পারবেন।
-মাত্র কয়েক মিনিটের মধ্যেই আপনার একাউন্টে ব্যালেন্স যোগ হবে।
-সাহায্যের জন্য নিচের Agent Button ব্যবহার করুন।
-</p>
-
-<div class="payment-icons">
-
-<div class="pay">
-<img src="bkash.jpeg" alt="bKash">
-<span>bKash</span>
-</div>
-
-<div class="pay">
-<img src="nagad.jpeg" alt="Nagad">
-<span>Nagad</span>
-</div>
-
-<div class="pay">
-<img src="rocket.png" alt="Rocket">
-<span>Rocket</span>
-</div>
-
-</div>
-
-<div class="agent-buttons">
-
-<a href="https://wa.me/8801826444505?text=Hello%20I%20want%20to%20deposit%20by%20agent" class="agent-btn">
-💰 Deposit With Agent
-</a>
-
-<a href="https://wa.me/8801826444505" class="agent-btn">
-📞 WhatsApp Agent
-</a>
-
-<a href="https://t.me/+MeoTD85pHfo5YzU1" class="agent-btn telegram">
-✈ Telegram Agent
-</a>
-
-</div>
-
+<!-- Cards -->
+<div class="container">
+  <!-- 1xBet -->
+  <div class="card">
+    <img src="1xbet-logo.jpg" class="site-logo">
+    <p>Promo Code: TANG73</p>
+    <a class="btn" href="mylink" target="_blank">👉 Sign Up</a>
+    <div class="recommend-corner">King👑</div>
   </div>
 
-  <div class="faq-section">
+  <!-- Pro Bet -->
+  <div class="card">
+    <img src="probet.logo.jpg" class="site-logo">
+    <p>Promo Code: TANG73</p>
+    <a class="btn" href="mylink" target="_blank">👉 Sign Up</a>
+    <div class="recommend-corner">Best🫰</div>
+  </div>
+</div>
 
+<!-- FAQ Section -->
+<div class="faq-section">
 <h2>❓ সাধারণ জিজ্ঞাসা (FAQ)</h2>
-
 <div class="faq-item">
 <div class="faq-question">
 কিভাবে একাউন্ট খুলবো? <span class="arrow">⬇</span>
 </div>
 <div class="faq-answer">
-আপনার পছন্দের সাইট (1xBet, Linebet বা Melbet) এর Register বাটনে ক্লিক করে সহজেই একাউন্ট তৈরি করতে পারবেন।
+আপনার পছন্দের সাইট (1xBet বা Pro Bet) এর Register বাটনে ক্লিক করে সহজেই একাউন্ট তৈরি করতে পারবেন।
 </div>
 </div>
 
@@ -592,108 +223,18 @@ bKash / Nagad / Rocket এর মাধ্যমে আমাদের <b>Verifi
 Withdraw request করার পরে Agent এর সাথে যোগাযোগ করলে দ্রুত পেমেন্ট পাবেন।
 </div>
 </div>
-
-  </div>
-  <div class="share-bar">
-  <span class="share-text">বন্ধুদের শেয়ার করো:</span>
-  
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://betb.live" target="_blank" class="share fb">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" />
-  </a>
-
-  <a href="https://api.whatsapp.com/send?text=Best%20Betting%20Site%20Visit%20Now%20https://betb.live" target="_blank" class="share wa">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
-  </a>
-
-  <a href="https://t.me/share/url?url=https://betb.live&text=Best%20Betting%20Site" target="_blank" class="share tg">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" />
-  </a>
-</div>
-<p style="text-align:center;font-size:13px;color:#9ca3af;margin-top:15px;">
-⚠ Disclaimer: This site provides access to international betting platforms. 
-Users must be 18+ and responsible for complying with their local laws.
-</p>
-  <!-- Live Chat Button -->
-<div class="live-chat-btn" onclick="openChat()">
-  💬 Live Chat
 </div>
 
-<!-- Live Chat Popup -->
-<div class="live-chat-popup" id="liveChatPopup">
-  <div class="chat-header">
-    Live Support
-    <span onclick="closeChat()" class="chat-close">✖</span>
-  </div>
-  <div class="chat-body">
-    <button onclick="sendReply('1xBet')">আমি 1xBet একাউন্ট করতে চাই</button>
-    <button onclick="sendReply('Linebet')">আমি Linebet একাউন্ট করতে চাই</button>
-    <button onclick="sendReply('Melbet')">আমি Melbet একাউন্ট করতে চাই</button>
-    
-    <div id="chatReply" class="chat-reply" style="display:none;">
-      <a href="https://wa.me/8801826444505" target="_blank" class="chat-link">💬 WhatsApp</a>
-      <a href="https://t.me/+MeoTD85pHfo5YzU1" target="_blank" class="chat-link">📨 Telegram</a>
-    </div>
-  </div>
-</div>
-  <div class="wa-popup" id="waPopup">
-  <div class="wa-message">
-    Hi👋
-  </div>
-  <a href="https://wa.me/8801826444505?text=Hello%20I%20want%20to%20create%20account" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-  </a>
-  </div>
 <footer>
 © 2026 Online Bet | All Rights Reserved
 </footer>
 
 <script>
-
-document.querySelectorAll('.btn').forEach(function(btn){
-btn.addEventListener('click',function(){
-console.log('Affiliate clicked:',this.href);
-fbq('track','Lead');
-});
-});
-
-let currentSlide=0;
-const slides=document.querySelectorAll('#banner-slider .slides > a');
-const totalSlides=slides.length;
-
-function showSlide(index){
-slides.forEach((slide)=>slide.classList.remove('active'));
-slides[index].classList.add('active');
-}
-
-showSlide(currentSlide);
-
-setInterval(()=>{
-currentSlide=(currentSlide+1)%totalSlides;
-showSlide(currentSlide);
-},3000);
-
-</script>
-  <script>
-function openChat(){
-  document.getElementById('liveChatPopup').style.display = 'block';
-}
-
-function closeChat(){
-  document.getElementById('liveChatPopup').style.display = 'none';
-}
-
-function sendReply(site){
-  document.getElementById('chatReply').style.display = 'flex';
-}
-  </script>
- 
-  <script>
+// FAQ Toggle
 document.querySelectorAll(".faq-question").forEach(function(item){
   item.addEventListener("click", function(){
-
     const answer = this.nextElementSibling;
     const arrow = this.querySelector(".arrow");
-
     if(answer.style.display === "block"){
       answer.style.display = "none";
       arrow.style.transform = "rotate(0deg)";
@@ -701,17 +242,9 @@ document.querySelectorAll(".faq-question").forEach(function(item){
       answer.style.display = "block";
       arrow.style.transform = "rotate(180deg)";
     }
-
   });
 });
-  </script>
-  <script>
-
-setTimeout(function(){
-document.getElementById("waPopup").style.display="flex";
-},5000);
-
-  </script>
+</script>
 
 </body>
 </html>
