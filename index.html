@@ -95,6 +95,78 @@ body{background:#0f172a;color:#fff;}
 .arrow{transition:0.3s;}
 .faq-answer{display:none;padding:10px;margin-top:5px;background:#020617;border-radius:8px;}
 
+    /* New Contact Section Styling */
+.contact-section-new {
+    padding: 30px 15px;
+    background: #1e293b;
+    border-radius: 15px;
+    margin: 20px 15px;
+    text-align: center;
+    border: 1px solid rgba(56, 189, 248, 0.2);
+}
+.contact-title {
+    color: #38bdf8;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+.contact-subtitle {
+    color: #94a3b8;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.contact-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.contact-icon {
+    font-size: 24px;
+    margin-right: 15px;
+    width: 30px;
+    text-align: center;
+}
+.contact-info {
+    text-align: left;
+}
+.contact-info .label {
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+.contact-info .number {
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/* Colors and Hover Effects */
+.wa-bg { background: rgba(37, 211, 102, 0.1); border-left: 4px solid #25d366; }
+.wa-bg:hover { background: rgba(37, 211, 102, 0.2); }
+.wa-bg .contact-icon { color: #25d366; }
+
+.tg-bg { background: rgba(0, 136, 204, 0.1); border-left: 4px solid #0088cc; }
+.tg-bg:hover { background: rgba(0, 136, 204, 0.2); }
+.tg-bg .contact-icon { color: #0088cc; }
+
+.imo-bg { background: rgba(56, 189, 248, 0.1); border-left: 4px solid #38bdf8; }
+.imo-bg:hover { background: rgba(56, 189, 248, 0.2); }
+.imo-bg .contact-icon { color: #38bdf8; }
+    
 footer{text-align:center; padding: 20px; font-size: 12px; opacity: 0.6;}
 </style>
 </head>
@@ -178,9 +250,9 @@ footer{text-align:center; padding: 20px; font-size: 12px; opacity: 0.6;}
 </div>
 <div class="container">
   <div class="card">
-    <img src="gl.jpg" class="site-logo">
+    <img src="bd2.png" class="site-logo">
     <p>🎯Tangail Club🎯</p>
-    <a class="btn" href="goal90.live" target="_blank">Register Goal90</a>
+    <a class="btn" href="bdworld.live" target="_blank">Register BdWorld</a>
   </div>
     <div class="card">
     <img src="gm.jpg" class="site-logo">
@@ -193,9 +265,9 @@ footer{text-align:center; padding: 20px; font-size: 12px; opacity: 0.6;}
     <a class="btn" href="bdt20.live" target="_blank">Register Bdt20</a>
         </div>
         <div class="card">
-    <img src="bd2.png" class="site-logo">
+    <img src="gl.jpg" class="site-logo">
     <p>🎯Tangail Club🎯</p>
-    <a class="btn" href="bdworld.live" target="_blank">Register BdWorld</a>
+    <a class="btn" href="goal90.live" target="_blank">Register Goal90</a>
     </div>
     
 <div class="faq-section">
@@ -216,7 +288,39 @@ footer{text-align:center; padding: 20px; font-size: 12px; opacity: 0.6;}
 </div>
 </div>
 
-<footer>© 2026 Online Bet | All Rights Reserved</footer>
+    <div class="contact-section-new">
+    <h2 class="contact-title">📲 যোগাযোগ করুন (Contact Us)</h2>
+    <p class="contact-subtitle">যেকোনো প্রয়োজনে সরাসরি আমাদের সাথে যোগাযোগ করুন</p>
+    
+    <div class="contact-list-wrapper">
+        <a href="https://wa.me/8801826444505" target="_blank" class="contact-item wa-bg">
+            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="contact-info">
+                <span class="label">WhatsApp</span>
+                <span class="number">01874612969</span>
+            </div>
+        </a>
+
+        <a href="https://t.me/YOUR_TELEGRAM" target="_blank" class="contact-item tg-bg">
+            <div class="contact-icon"><i class="fab fa-telegram-plane"></i></div>
+            <div class="contact-info">
+                <span class="label">Telegram</span>
+                <span class="number">@Tangailclub</span>
+            </div>
+        </a>
+
+        <a href="tel:8801826444505" class="contact-item imo-bg">
+            <div class="contact-icon"><i class="fas fa-comment-dots"></i></div>
+            <div class="contact-info">
+                <span class="label">IMO</span>
+                <span class="number">01874612969</span>
+            </div>
+        </a>
+    </div>
+    </div>
+    
+
+<footer>© 2026 Tangail Club| All Rights Reserved</footer>
 
 <script>
 // FAQ Toggle
