@@ -26,48 +26,16 @@
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
 body{background:#0f172a;color:#fff;}
 
-/* ========== HEADER ========== */
-.header-wrapper{
-    position: relative;
-    z-index: 100;
-}
-.top-bar{
-    background: rgba(15, 23, 42, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(59, 130, 246, 0.3);
-    padding: 12px 5%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
+/* HEADER */
+.header-wrapper{position: relative; z-index: 100;}
+.top-bar{background: rgba(15, 23, 42, 0.95);backdrop-filter: blur(10px);border-bottom: 1px solid rgba(59, 130, 246, 0.3);padding: 12px 5%;display:flex;justify-content:space-between;align-items:center;}
 .logo-img{height:40px; border-radius:10px;}
-.admin-status{
-    display:flex;
-    flex-direction:column;
-    align-items:flex-end;
-    gap:6px;
-}
-.online-indicator{
-    display:flex;
-    align-items:center;
-    gap:6px;
-    background: rgba(16,185,129,0.15);
-    padding:5px 10px;
-    border-radius:30px;
-    border:1px solid rgba(16,185,129,0.3);
-}
-.online-dot{
-    width:8px;height:8px;background:#10b981;border-radius:50%;
-    animation:pulse 1.5s infinite;
-}
+.admin-status{display:flex;flex-direction:column;align-items:flex-end;gap:6px;}
+.online-indicator{display:flex;align-items:center;gap:6px;background: rgba(16,185,129,0.15);padding:5px 10px;border-radius:30px;border:1px solid rgba(16,185,129,0.3);}
+.online-dot{width:8px;height:8px;background:#10b981;border-radius:50%;animation:pulse 1.5s infinite;}
 @keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.4;}}
 .online-text{color:#f1f5f9;font-size:12px;}
-.contact-link{
-    display:flex;align-items:center;gap:6px;
-    background: rgba(37,211,102,0.15);
-    padding:5px 10px;border-radius:30px;text-decoration:none;
-    transition:0.3s;
-}
+.contact-link{display:flex;align-items:center;gap:6px;background: rgba(37,211,102,0.15);padding:5px 10px;border-radius:30px;text-decoration:none;transition:0.3s;}
 .contact-link i{color:#25d366;font-size:14px;}
 .contact-link span{color:#f1f5f9;font-size:12px;}
 .contact-link:hover{background: rgba(37,211,102,0.3);}
@@ -79,9 +47,7 @@ body{background:#0f172a;color:#fff;}
 
 /* Cards */
 .container{padding:15px;}
-.card{
-background:#1e293b;margin-bottom:20px;padding:20px;border-radius:10px;text-align:center;box-shadow:0 0 10px rgba(0,0,0,0.4);transition:0.3s;position:relative;
-}
+.card{background:#1e293b;margin-bottom:20px;padding:20px;border-radius:10px;text-align:center;box-shadow:0 0 10px rgba(0,0,0,0.4);transition:0.3s;position:relative;}
 .card:hover{transform:scale(1.03);}
 .site-logo{width:160px;border-radius:14px;display:block;margin:auto;margin-bottom:10px;}
 .card p{font-size:14px;}
@@ -89,18 +55,11 @@ background:#1e293b;margin-bottom:20px;padding:20px;border-radius:10px;text-align
 @keyframes pulse{0%{box-shadow:0 0 5px #38bdf8;}50%{box-shadow:0 0 20px #38bdf8;}100%{box-shadow:0 0 5px #38bdf8;}}
 .recommend-corner{position:absolute;top:10px;right:10px;background:#ef4444;color:#fff;padding:6px 12px;border-radius:12px;font-weight:bold;font-size:12px;}
 
-/* Agent Section */
-.agent-section{background:#1e293b;padding:20px;border-radius:12px;text-align:center;margin-top:20px;box-shadow:0 0 10px rgba(0,0,0,0.4);}
-.agent-section h2{margin-bottom:10px;color:#38bdf8;}
-.agent-text{font-size:14px;margin-bottom:18px;line-height:1.6;}
-.payment-icons{display:flex;justify-content:center;gap:25px;margin-bottom:20px;}
-.pay{text-align:center;}
-.pay img{width:45px;height:45px;border-radius:10px;display:block;margin:auto;}
-.pay span{font-size:13px;display:block;margin-top:6px;color:#ffffff;font-weight:bold;}
-.agent-buttons{display:flex;flex-direction:column;gap:10px;}
-.agent-btn{padding:12px;background:#22c55e;color:#fff;text-decoration:none;font-weight:bold;border-radius:8px;box-shadow:0 0 10px rgba(0,0,0,0.4);transition:0.3s;}
-.agent-btn.telegram{background:#3b82f6;}
-.agent-btn:hover{opacity:0.9;}
+/* Slider */
+#banner-slider{position:relative;overflow:hidden;border-radius:12px;margin-bottom:20px;}
+#banner-slider .slides a{display:none;position:absolute;top:0;left:0;width:100%;}
+#banner-slider .slides a.active{display:block;}
+#banner-slider .slides img{width:100%;border-radius:12px;}
 
 /* FAQ */
 .faq-section{background:#1e293b;padding:20px;border-radius:12px;margin-top:20px;color:#fff;}
@@ -109,36 +68,8 @@ background:#1e293b;margin-bottom:20px;padding:20px;border-radius:10px;text-align
 .faq-question{background:#0f172a;padding:12px;border-radius:8px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;}
 .arrow{transition:0.3s;}
 .faq-answer{display:none;padding:10px;margin-top:5px;background:#020617;border-radius:8px;}
-
-/* Share bar */
-.share-bar{display:flex;justify-content:center;align-items:center;gap:12px;margin:15px 0;padding:8px 10px;background:#111827;border-radius:10px;}
-.share-text{color:#fff;font-size:14px;font-weight:bold;}
-.share-bar .share{width:38px;height:38px;border-radius:50%;display:flex;justify-content:center;align-items:center;transition:transform 0.2s;}
-.share-bar .share:hover{transform:scale(1.1);}
-.share-bar .share img{width:24px;height:24px;}
-
-/* Live Chat */
-.live-chat-btn{position: fixed;bottom: 20px;right: 20px;background:#38bdf8;color:#000;padding:10px 15px;border-radius:8px;font-weight:bold;box-shadow:0 0 10px rgba(0,0,0,0.5);cursor:pointer;z-index:999;transition:0.3s;}
-.live-chat-btn:hover{transform: scale(1.05);box-shadow:0 0 15px rgba(0,0,0,0.7);}
-.live-chat-popup{display:none;position: fixed;bottom: 80px;right: 20px;width: 280px;background: #1e293b;color: #fff;border-radius: 10px;box-shadow:0 0 15px rgba(0,0,0,0.5);z-index: 1000;overflow: hidden;}
-.chat-header{background:#111827;padding:10px;font-weight:bold;display:flex;justify-content:space-between;align-items:center;}
-.chat-close{cursor:pointer;}
-.chat-body{padding:10px;}
-.chat-body button{width:100%;margin:5px 0;padding:8px 10px;border:none;border-radius:6px;background:#d6093f;color:#000;font-weight:bold;cursor:pointer;transition:0.3s;}
-.chat-body button:hover{background:#0ea5e9;}
-.chat-reply{margin-top:10px;padding:8px;border-radius:6px;min-height:30px;text-align:center;display:flex;justify-content:space-around;}
-.chat-link{background:#25D366;color:#fff;padding:6px 12px;border-radius:6px;text-decoration:none;font-weight:bold;transition:0.3s;}
-.chat-link:nth-child(2){background:#0088cc;}
-.chat-link:hover{opacity:0.8;}
-
-/* WhatsApp Popup */
-.wa-popup{position:fixed;bottom:20px;left: 20px;display:none;align-items:center;flex-direction: row-reverse;gap:10px;z-index:999;}
-.wa-message{background:#25D366;color:#fff;padding:10px 14px;border-radius:20px;font-size:13px;box-shadow:0 0 10px rgba(0,0,0,0.3);}
-.wa-popup img{width:55px;height:55px;border-radius:50%;box-shadow:0 0 10px rgba(0,0,0,0.4);animation:waPulse 1.5s infinite;cursor:pointer;}
-@keyframes waPulse{0%{transform:scale(1);}50%{transform:scale(1.1);}100%{transform:scale(1);}}
 </style>
 </head>
-
 <body>
 
 <!-- HEADER -->
@@ -167,41 +98,18 @@ background:#1e293b;margin-bottom:20px;padding:20px;border-radius:10px;text-align
   </div>
 </div>
 
-<!-- Banner Slider with Screenshot & 3 slides -->
+<!-- Banner Slider -->
 <div id="banner-slider" class="container">
   <div class="slides">
-    
-    <a href="mylink1" target="_blank">
-      <img src="ipl-banner.jpeg" style="width:100%; border-radius:12px;" alt="Slide 1">
-    </a>
-    <a href="mylink2" target="_blank">
-      <img src="psl-banner.jpeg" style="width:100%; border-radius:12px;" alt="Slide 2">
-    </a>
-    <a href="mylink3" target="_blank">
-      <img src="slide3.jpg" style="width:100%; border-radius:12px;" alt="Slide 3">
-    </a>
+    <a href="mylink1" target="_blank" class="active"><img src="ipl-banner.jpeg" alt="Slide 1"></a>
+    <a href="mylink2" target="_blank"><img src="psl-banner.jpeg" alt="Slide 2"></a>
+    <a href="mylink3" target="_blank"><img src="slide3.jpg" alt="Slide 3"></a>
+    <a href="mylink4" target="_blank"><img src="slide4.jpg" alt="Slide 4"></a>
   </div>
 </div>
 
-<script>
-let currentSlide = 0;
-const slides = document.querySelectorAll('#banner-slider .slides > a');
-const totalSlides = slides.length;
-
-function showSlide(index){
-  slides.forEach(slide => slide.classList.remove('active'));
-  slides[index].classList.add('active');
-}
-showSlide(currentSlide);
-setInterval(() => {
-  currentSlide = (currentSlide + 1) % totalSlides;
-  showSlide(currentSlide);
-}, 3000);
-</script>
-
 <!-- Cards -->
 <div class="container">
-  <!-- 1xBet -->
   <div class="card">
     <img src="1xbet-logo.jpg" class="site-logo">
     <p>Promo Code: TANG73</p>
@@ -209,7 +117,6 @@ setInterval(() => {
     <div class="recommend-corner">King👑</div>
   </div>
 
-  <!-- Pro Bet -->
   <div class="card">
     <img src="probet.jpeg" class="site-logo">
     <p>Promo Code: TANG73</p>
@@ -217,45 +124,27 @@ setInterval(() => {
     <div class="recommend-corner">Best🫰</div>
   </div>
 </div>
-<div id="banner-slider" class="container">
-  <div class="slides">
-    <a href="#" target="_blank">
-      <img src="screenshot.jpg" style="width:100%; border-radius:12px;" alt="Screenshot Preview">
-    </div>
+
 <!-- FAQ Section -->
 <div class="faq-section">
 <h2>❓ সাধারণ জিজ্ঞাসা (FAQ)</h2>
 <div class="faq-item">
-<div class="faq-question">
-কিভাবে একাউন্ট খুলবো? <span class="arrow">⬇</span>
-</div>
-<div class="faq-answer">
-আপনার পছন্দের সাইট (1xBet বা Pro Bet) এর Register বাটনে ক্লিক করে সহজেই একাউন্ট তৈরি করতে পারবেন।
-</div>
+<div class="faq-question">কিভাবে একাউন্ট খুলবো? <span class="arrow">⬇</span></div>
+<div class="faq-answer">আপনার পছন্দের সাইট (1xBet বা Pro Bet) এর Register বাটনে ক্লিক করে সহজেই একাউন্ট তৈরি করতে পারবেন।</div>
 </div>
 
 <div class="faq-item">
-<div class="faq-question">
-কিভাবে ডিপোজিট করবো? <span class="arrow">⬇</span>
-</div>
-<div class="faq-answer">
-আপনি আমাদের Agent এর মাধ্যমে bKash, Nagad বা Rocket দিয়ে সহজে ডিপোজিট করতে পারবেন।
-</div>
+<div class="faq-question">কিভাবে ডিপোজিট করবো? <span class="arrow">⬇</span></div>
+<div class="faq-answer">আপনি আমাদের Agent এর মাধ্যমে bKash, Nagad বা Rocket দিয়ে সহজে ডিপোজিট করতে পারবেন।</div>
 </div>
 
 <div class="faq-item">
-<div class="faq-question">
-কিভাবে টাকা উত্তোলন করবো? <span class="arrow">⬇</span>
-</div>
-<div class="faq-answer">
-Withdraw request করার পরে Agent এর সাথে যোগাযোগ করলে দ্রুত পেমেন্ট পাবেন।
-</div>
+<div class="faq-question">কিভাবে টাকা উত্তোলন করবো? <span class="arrow">⬇</span></div>
+<div class="faq-answer">Withdraw request করার পরে Agent এর সাথে যোগাযোগ করলে দ্রুত পেমেন্ট পাবেন।</div>
 </div>
 </div>
 
-<footer>
-© 2026 Online Bet | All Rights Reserved
-</footer>
+<footer>© 2026 Online Bet | All Rights Reserved</footer>
 
 <script>
 // FAQ Toggle
@@ -272,6 +161,20 @@ document.querySelectorAll(".faq-question").forEach(function(item){
     }
   });
 });
+
+// Slider
+let currentSlide = 0;
+const slides = document.querySelectorAll('#banner-slider .slides > a');
+const totalSlides = slides.length;
+
+function showSlide(index){
+  slides.forEach(slide => slide.classList.remove('active'));
+  slides[index].classList.add('active');
+}
+setInterval(() => {
+  currentSlide = (currentSlide + 1) % totalSlides;
+  showSlide(currentSlide);
+}, 3000);
 </script>
 
 </body>
