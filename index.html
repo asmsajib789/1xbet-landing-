@@ -3,22 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Best Betting Site In Bangladesh</title>
-
 <meta name="description" content="Promo Code: TANG73 - Claim your bonus instantly!">
 <meta name="keywords" content="1xBet, Pro Bet, betting, casino, bonus">
-
 <meta name="google-site-verification" content="hu3VDQBOxTW_utPUJZ9wCzrThbNnx0Pc3oAeGv5kBb8"/>
-
 <meta property="og:title" content="Register 1xBet, Pro Bet">
 <meta property="og:description" content="Claim your bonus instantly via our official links!">
 <meta property="og:image" content="https:///preview.png">
 <meta property="og:url" content="https://">
 <meta property="og:type" content="website">
-
 <meta name="twitter:card" content="summary_large_image">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -44,35 +38,41 @@ body{background:#0f172a;color:#fff;}
 .marquee-content{white-space:nowrap;color:#38bdf8;font-size:12px;font-weight:bold;position:absolute;animation:scrollText 20s linear infinite;}
 @keyframes scrollText{0%{left:100%;}100%{left:-100%;}}
 
-/* Cards */
-.container{padding:15px;margin-top:0px;} /* margin-top zeroed for consistency */
+/* Cards - updated container padding removed for slider */
+.container-for-cards{padding:15px;margin-top:10px;}
 .card{background:#1e293b;margin-bottom:20px;padding:20px;border-radius:10px;text-align:center;box-shadow:0 0 10px rgba(0,0,0,0.4);transition:0.3s;position:relative;}
 .card:hover{transform:scale(1.03);}
 .site-logo{width:160px;border-radius:14px;display:block;margin:auto;margin-bottom:10px;}
 .card p{font-size:14px;}
-.btn{display:inline-block;margin-top:10px;padding:10px 20px;background:#38bdf8;color:#000;text-decoration:none;font-weight:bold;border-radius:6px;animation:btn-pulse 1.5s infinite;}
-@keyframes btn-pulse{0%{box-shadow:0 0 5px #38bdf8;}50%{box-shadow:0 0 20px #38bdf8;}100%{box-shadow:0 0 5px #38bdf8;}}
+.btn{display:inline-block;margin-top:10px;padding:10px 20px;background:#38bdf8;color:#000;text-decoration:none;font-weight:bold;border-radius:6px;animation:pulse 1.5s infinite;}
+@keyframes pulse{0%{box-shadow:0 0 5px #38bdf8;}50%{box-shadow:0 0 20px #38bdf8;}100%{box-shadow:0 0 5px #38bdf8;}}
 .recommend-corner{position:absolute;top:10px;right:10px;background:#ef4444;color:#fff;padding:6px 12px;border-radius:12px;font-weight:bold;font-size:12px;}
 
-/* Slider */
-#banner-slider{position:relative;overflow:hidden;border-radius:12px;margin: 15px 15px 5px 15px;height:210px;} /* Adjusted margin & height for mobile view */
-#banner-slider .slides a{display:none;position:absolute;top:0;left:0;width:100%;}
+/* Slider - Fixed */
+#banner-slider{position:relative;overflow:hidden;border-radius:12px;margin-bottom:20px;height:250px;width:100%;}
+/* Added: remove any extra margin/padding */
+#banner-slider .slides{position:relative;width:100%;height:100%;}
+#banner-slider .slides a{display:none;position:absolute;top:0;left:0;width:100%;height:100%;}
 #banner-slider .slides a.active{display:block;}
-#banner-slider .slides img{width:100%;height:100%;border-radius:12px;object-fit:cover;display:block;}
+#banner-slider .slides img{width:100%;height:100%;border-radius:12px;object-fit:cover;}
+
+/* Slider wrapper - no padding/margin */
+.slider-wrapper{width:100%;padding:0;margin:0;}
 
 /* FAQ */
-.faq-section{background:#1e293b;padding:20px;border-radius:12px;margin:20px 15px;color:#fff;}
+.faq-section{background:#1e293b;padding:20px;border-radius:12px;margin-top:20px;color:#fff;}
 .faq-section h2{text-align:center;margin-bottom:15px;color:#38bdf8;}
 .faq-item{margin-bottom:10px;}
 .faq-question{background:#0f172a;padding:12px;border-radius:8px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;}
 .arrow{transition:0.3s;}
 .faq-answer{display:none;padding:10px;margin-top:5px;background:#020617;border-radius:8px;}
 
-footer{text-align:center; padding: 20px; font-size: 12px; opacity: 0.6;}
+footer{text-align:center;padding:15px;font-size:12px;}
 </style>
 </head>
 <body>
 
+<!-- HEADER -->
 <div class="header-wrapper">
   <div class="top-bar">
     <div class="logo-area">
@@ -91,22 +91,27 @@ footer{text-align:center; padding: 20px; font-size: 12px; opacity: 0.6;}
   </div>
 </div>
 
+<!-- Marquee -->
 <div class="marquee">
   <div class="marquee-content">
     🔥 Promo Code: TANG73 🎁 100% Bonus | 💸 Fast Deposit & Withdraw | 🚀 Join Now | 01826444505 WhatsApp
   </div>
 </div>
 
-<div id="banner-slider">
-  <div class="slides">
-    <a href="mylink1" target="_blank" class="active"><img src="ipl-banner.jpeg" alt="Slide 1"></a>
-    <a href="mylink2" target="_blank"><img src="psl-banner.jpeg" alt="Slide 2"></a>
-    <a href="mylink3" target="_blank"><img src="la.jpeg" alt="Slide 3"></a>
-    <a href="mylink4" target="_blank"><img src="world2.jpg" alt="Slide 4"></a>
+<!-- Banner Slider - Fixed: No container class, separate div -->
+<div class="slider-wrapper">
+  <div id="banner-slider">
+    <div class="slides">
+      <a href="mylink1" target="_blank" class="active"><img src="ipl-banner.jpeg" alt="Slide 1"></a>
+      <a href="mylink2" target="_blank"><img src="psl-banner.jpeg" alt="Slide 2"></a>
+      <a href="mylink3" target="_blank"><img src="la.jpeg" alt="Slide 3"></a>
+      <a href="mylink4" target="_blank"><img src="world2.jpg" alt="Slide 4"></a>
+    </div>
   </div>
 </div>
 
-<div class="container">
+<!-- Cards -->
+<div class="container-for-cards">
   <div class="card">
     <img src="1xbet-logo.jpg" class="site-logo">
     <p>Promo Code: TANG73</p>
@@ -122,6 +127,7 @@ footer{text-align:center; padding: 20px; font-size: 12px; opacity: 0.6;}
   </div>
 </div>
 
+<!-- FAQ Section -->
 <div class="faq-section">
 <h2>❓ সাধারণ জিজ্ঞাসা (FAQ)</h2>
 <div class="faq-item">
