@@ -156,12 +156,7 @@ body{background:#0f172a;color:#fff; line-height: 1.4;}
 .wa-bg { background: rgba(37, 211, 102, 0.1); border-left: 4px solid #25d366; }
 .tg-bg { background: rgba(0, 136, 204, 0.1); border-left: 4px solid #0088cc; }
 .imo-bg { background: rgba(56, 189, 248, 0.1); border-left: 4px solid #38bdf8; }
-    .thumb-upload input {
-    margin: 10px 0;
-}
-
-#thumbPreview {
-    display: none;
+.thumbnail {
     width: 150px;
     height: 150px;
     object-fit: cover;
@@ -333,11 +328,7 @@ footer{text-align:center; padding: 15px; font-size: 11px; opacity: 0.6;}
     </a>
   </div>
 </div>
-    <div class="thumb-upload">
-    <input type="file" id="thumbInput" accept="image/*">
-</div>
-
-<img id="thumbPreview" src="" alt="Thumbnail" />
+<img src="your-image.jpg" class="thumbnail" alt="Thumbnail">
 
 <footer>© 2026 Tangail Club | All Rights Reserved</footer>
 
@@ -360,23 +351,6 @@ setInterval(() => {
   slides[currentSlide].classList.add('active');
 }, 3000);
 </script>
-    <script>
-document.getElementById("thumbInput").addEventListener("change", function(e) {
-    const file = e.target.files[0];
-
-    if (file) {
-        const reader = new FileReader();
-
-        reader.onload = function(event) {
-            const img = document.getElementById("thumbPreview");
-            img.src = event.target.result;
-            img.style.display = "block";
-        }
-
-        reader.readAsDataURL(file);
-    }
-});
-    </script>
 
 </body>
 </html>
