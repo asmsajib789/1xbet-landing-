@@ -23,151 +23,92 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
-body{background:#0f172a;color:#fff;}
+body{background:#0f172a;color:#fff; line-height: 1.4;}
 
 /* HEADER */
 .header-wrapper{position: relative; z-index: 100;}
-.top-bar{background: rgba(15, 23, 42, 0.95);backdrop-filter: blur(10px);border-bottom: 1px solid rgba(59, 130, 246, 0.3);padding: 12px 5%;display:flex;justify-content:space-between;align-items:center;}
-.logo-img{height:40px; border-radius:10px;}
-.admin-status{display:flex;flex-direction:column;align-items:flex-end;gap:6px;}
-.online-indicator{display:flex;align-items:center;gap:6px;background: rgba(16,185,129,0.15);padding:5px 10px;border-radius:30px;border:1px solid rgba(16,185,129,0.3);}
-.online-dot{width:8px;height:8px;background:#10b981;border-radius:50%;animation:pulse-dot 1.5s infinite;}
+.top-bar{background: rgba(15, 23, 42, 0.95);backdrop-filter: blur(10px);border-bottom: 1px solid rgba(59, 130, 246, 0.3);padding: 8px 5%;display:flex;justify-content:space-between;align-items:center;}
+.logo-img{height:35px; border-radius:8px;}
+.admin-status{display:flex;flex-direction:column;align-items:flex-end;gap:4px;}
+.online-indicator{display:flex;align-items:center;gap:6px;background: rgba(16,185,129,0.15);padding:4px 8px;border-radius:30px;border:1px solid rgba(16,185,129,0.3);}
+.online-dot{width:7px;height:7px;background:#10b981;border-radius:50%;animation:pulse-dot 1.5s infinite;}
 @keyframes pulse-dot{0%,100%{opacity:1;}50%{opacity:0.4;}}
-.online-text{color:#f1f5f9;font-size:12px;}
-.contact-link{display:flex;align-items:center;gap:6px;background: rgba(37,211,102,0.15);padding:5px 10px;border-radius:30px;text-decoration:none;transition:0.3s;}
-.contact-link i{color:#25d366;font-size:14px;}
-.contact-link span{color:#f1f5f9;font-size:12px;}
-.contact-link:hover{background: rgba(37,211,102,0.3);}
+.online-text{color:#f1f5f9;font-size:11px;}
+.contact-link{display:flex;align-items:center;gap:6px;background: rgba(37,211,102,0.15);padding:4px 8px;border-radius:30px;text-decoration:none;transition:0.3s;}
+.contact-link i{color:#25d366;font-size:12px;}
+.contact-link span{color:#f1f5f9;font-size:11px;}
 
-/* Marquee */
-.marquee {width:100%;background:#020617;overflow:hidden;position:relative;height:24px;display:flex;align-items:center;}
-.marquee-content{white-space:nowrap;color:#38bdf8;font-size:12px;font-weight:bold;position:absolute;animation:scrollText 20s linear infinite;}
+/* Marquee - Reduced Height */
+.marquee {width:100%;background:#020617;overflow:hidden;position:relative;height:22px;display:flex;align-items:center; margin-bottom: 0;}
+.marquee-content{white-space:nowrap;color:#38bdf8;font-size:11px;font-weight:bold;position:absolute;animation:scrollText 20s linear infinite;}
 @keyframes scrollText{0%{left:100%;}100%{left:-100%;}}
 
-/* Slider */
+/* Slider - Tighter Margin */
 #banner-slider {
     position: relative;
     overflow: hidden;
     border-radius: 12px;
-    margin: 15px 15px 0px 15px;
+    margin: 8px 15px 5px 15px; 
     height: 180px; 
 }
 #banner-slider .slides a{display:none;position:absolute;top:0;left:0;width:100%;height:100%;}
 #banner-slider .slides a.active{display:block;}
-#banner-slider .slides img{width:100%;height:100%;border-radius:12px;object-fit:contain;display:block;}
+#banner-slider .slides img{width:100%;height:100%;border-radius:12px;object-fit:cover;display:block;}
 
-/* Cards Container */
-.container{padding: 10px 15px; margin-top: 0px;} 
-.card{background:#1e293b;margin-bottom:5px;padding:20px;border-radius:10px;text-align:center;box-shadow:0 0 10px rgba(0,0,0,0.4);transition:0.3s;position:relative;}
-.card:hover{transform:scale(1.03);}
-.site-logo{width:160px;border-radius:14px;display:block;margin:auto;margin-bottom:10px;}
-.card p{font-size:14px;}
-.btn{display:inline-block;margin-top:10px;padding:10px 20px;background:#38bdf8;color:#000;text-decoration:none;font-weight:bold;border-radius:6px;animation:pulse-btn 1.5s infinite;}
-@keyframes pulse-btn{0%{box-shadow:0 0 5px #38bdf8;}50%{box-shadow:0 0 20px #38bdf8;}100%{box-shadow:0 0 5px #38bdf8;}}
-.recommend-corner{position:absolute;top:10px;right:10px;background:#ef4444;color:#fff;padding:6px 12px;border-radius:12px;font-weight:bold;font-size:12px;}
+/* Cards Container - Reduced Padding */
+.container{padding: 5px 15px;} 
+.card{background:#1e293b;margin-bottom:10px;padding:15px;border-radius:12px;text-align:center;box-shadow:0 4px 10px rgba(0,0,0,0.3);transition:0.3s;position:relative;}
+.card:hover{transform:translateY(-3px);}
+.site-logo{width:140px;border-radius:10px;display:block;margin:0 auto 8px;}
+.card p{font-size:13px; margin-bottom: 2px; color: #cbd5e1;}
+.btn{display:inline-block;margin-top:8px;padding:8px 20px;background:#38bdf8;color:#000;text-decoration:none;font-weight:bold;border-radius:8px;animation:pulse-btn 1.5s infinite; font-size: 14px;}
+@keyframes pulse-btn{0%{box-shadow:0 0 5px #38bdf8;}50%{box-shadow:0 0 15px #38bdf8;}100%{box-shadow:0 0 5px #38bdf8;}}
+.recommend-corner{position:absolute;top:8px;right:8px;background:#ef4444;color:#fff;padding:4px 10px;border-radius:10px;font-weight:bold;font-size:11px;}
 
 /* AGENT SECTION STYLE */
 .agent-card {
     max-width: 450px;
-    margin: 10px auto 20px;
+    margin: 5px auto 15px;
     border: 1px solid rgba(56, 189, 248, 0.3);
     border-radius: 15px;
     overflow: hidden;
     background: #1e293b;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
-.agent-header { background: #0d2149; color: #38bdf8; padding: 12px; text-align: center; border-bottom: 1px solid rgba(56, 189, 248, 0.2); }
-.agent-body { padding: 15px; }
-.agent-stats { display: flex; justify-content: space-between; margin-bottom: 12px; border-bottom: 1px dashed #475569; padding-bottom: 8px; }
-.stat-item span { display: block; color: #94a3b8; font-size: 11px; text-transform: uppercase; }
-.stat-item strong { font-size: 14px; }
-.agent-btns { display: flex; gap: 8px; margin-bottom: 15px; }
-.btn-wa { flex: 1; text-align: center; background: #25d366; color: white; padding: 10px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 13px; }
-.btn-tg { flex: 1; text-align: center; background: #0088cc; color: white; padding: 10px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 13px; }
-.proof-box { border-top: 1px solid #334155; padding-top: 10px; text-align: center; }
-.proof-img-container { width: 100%; height: 180px; background: #0f172a; border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; margin-top: 8px; }
+.agent-header { background: #0d2149; color: #38bdf8; padding: 10px; text-align: center; border-bottom: 1px solid rgba(56, 189, 248, 0.2); }
+.agent-body { padding: 12px; }
+.agent-stats { display: flex; justify-content: space-between; margin-bottom: 10px; border-bottom: 1px dashed #475569; padding-bottom: 8px; }
+.stat-item span { display: block; color: #94a3b8; font-size: 10px; text-transform: uppercase; }
+.stat-item strong { font-size: 13px; }
+.agent-btns { display: flex; gap: 8px; margin-bottom: 12px; }
+.btn-wa, .btn-tg { flex: 1; text-align: center; color: white; padding: 10px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 13px; }
+.btn-wa { background: #25d366; }
+.btn-tg { background: #0088cc; }
+.proof-box { border-top: 1px solid #334155; padding-top: 8px; text-align: center; }
+.proof-img-container { width: 100%; height: 160px; background: #0f172a; border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; margin-top: 5px; }
 
 /* FAQ */
-.faq-section{background:#1e293b;padding:20px;border-radius:12px;margin:20px 15px;color:#fff;}
-.faq-section h2{text-align:center;margin-bottom:15px;color:#38bdf8;}
-.faq-item{margin-bottom:10px;}
-.faq-question{background:#0f172a;padding:12px;border-radius:8px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;}
-.arrow{transition:0.3s;}
-.faq-answer{display:none;padding:10px;margin-top:5px;background:#020617;border-radius:8px;}
+.faq-section{background:#1e293b;padding:15px;border-radius:12px;margin:15px;color:#fff;}
+.faq-section h2{text-align:center;margin-bottom:12px;color:#38bdf8; font-size: 1.1rem;}
+.faq-item{margin-bottom:8px;}
+.faq-question{background:#0f172a;padding:10px;border-radius:8px;cursor:pointer;display:flex;justify-content:space-between;align-items:center; font-size: 14px;}
+.faq-answer{display:none;padding:10px;margin-top:5px;background:#020617;border-radius:8px; font-size: 13px;}
 
-    /* New Contact Section Styling */
-.contact-section-new {
-    padding: 30px 15px;
-    background: #1e293b;
-    border-radius: 15px;
-    margin: 20px 15px;
-    text-align: center;
-    border: 1px solid rgba(56, 189, 248, 0.2);
-}
-.contact-title {
-    color: #38bdf8;
-    font-size: 1.2rem;
-    margin-bottom: 5px;
-}
-.contact-subtitle {
-    color: #94a3b8;
-    font-size: 12px;
-    margin-bottom: 20px;
-}
-.contact-list-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    max-width: 400px;
-    margin: 0 auto;
-}
-.contact-item {
-    display: flex;
-    align-items: center;
-    padding: 12px 15px;
-    border-radius: 10px;
-    text-decoration: none;
-    transition: 0.3s;
-    color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-}
-.contact-icon {
-    font-size: 24px;
-    margin-right: 15px;
-    width: 30px;
-    text-align: center;
-}
-.contact-info {
-    text-align: left;
-}
-.contact-info .label {
-    display: block;
-    font-size: 11px;
-    font-weight: bold;
-    text-transform: uppercase;
-    opacity: 0.8;
-}
-.contact-info .number {
-    display: block;
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-}
+/* Contact Section */
+.contact-section-new { padding: 20px 15px; background: #1e293b; border-radius: 15px; margin: 15px; text-align: center; border: 1px solid rgba(56, 189, 248, 0.2); }
+.contact-title { color: #38bdf8; font-size: 1.1rem; margin-bottom: 5px; }
+.contact-subtitle { color: #94a3b8; font-size: 11px; margin-bottom: 15px; }
+.contact-list-wrapper { display: flex; flex-direction: column; gap: 10px; max-width: 400px; margin: 0 auto; }
+.contact-item { display: flex; align-items: center; padding: 10px 15px; border-radius: 10px; text-decoration: none; color: #fff; border: 1px solid rgba(255, 255, 255, 0.05); }
+.contact-icon { font-size: 20px; margin-right: 15px; width: 25px; }
+.contact-info { text-align: left; }
+.contact-info .label { display: block; font-size: 10px; font-weight: bold; opacity: 0.8; }
+.contact-info .number { display: block; font-size: 14px; font-weight: bold; }
 
-/* Colors and Hover Effects */
 .wa-bg { background: rgba(37, 211, 102, 0.1); border-left: 4px solid #25d366; }
-.wa-bg:hover { background: rgba(37, 211, 102, 0.2); }
-.wa-bg .contact-icon { color: #25d366; }
-
 .tg-bg { background: rgba(0, 136, 204, 0.1); border-left: 4px solid #0088cc; }
-.tg-bg:hover { background: rgba(0, 136, 204, 0.2); }
-.tg-bg .contact-icon { color: #0088cc; }
-
 .imo-bg { background: rgba(56, 189, 248, 0.1); border-left: 4px solid #38bdf8; }
-.imo-bg:hover { background: rgba(56, 189, 248, 0.2); }
-.imo-bg .contact-icon { color: #38bdf8; }
     
-footer{text-align:center; padding: 20px; font-size: 12px; opacity: 0.6;}
+footer{text-align:center; padding: 15px; font-size: 11px; opacity: 0.6;}
 </style>
 </head>
 <body>
@@ -219,16 +160,17 @@ footer{text-align:center; padding: 20px; font-size: 12px; opacity: 0.6;}
     <a class="btn" href="mylink" target="_blank">👉 Register Now</a>
     <div class="recommend-corner">Best🫰</div>
   </div>
-      <div class="card">
+
+  <div class="card">
     <img src="ck1.png" class="site-logo">
-    <p>Casino,Slots and Sports</p>
+    <p>Casino, Slots and Sports</p>
     <a class="btn" href="https://www.ck107.com/affiliate_code?affiliate_code=DdUbwDJlzp" target="_blank">👉 Register Now</a>
     <div class="recommend-corner">exchange</div>
-      </div>
+  </div>
 
   <div class="agent-card">
     <div class="agent-header">
-        <h3 style="margin: 0; font-size: 1.1rem;"><i class="fas fa-user-tie"></i> অফিসিয়াল এজেন্ট সার্ভিস</h3>
+        <h3 style="margin: 0; font-size: 1rem;"><i class="fas fa-user-tie"></i> অফিসিয়াল এজেন্ট সার্ভিস</h3>
     </div>
     <div class="agent-body">
         <div class="agent-stats">
@@ -246,87 +188,63 @@ footer{text-align:center; padding: 20px; font-size: 12px; opacity: 0.6;}
             <a href="https://t.me/@Tangailclub" class="btn-tg" target="_blank"><i class="fab fa-telegram-plane"></i> Telegram</a>
         </div>
         <div class="proof-box">
-            <p style="font-size: 11px; color: #94a3b8; margin-bottom: 5px;">উইথড্র লোকেশন</p>
+            <p style="font-size: 10px; color: #94a3b8; margin-bottom: 5px;">উইথড্র লোকেশন</p>
             <div class="proof-img-container">
                 <img src="screenshot.jpg" alt="Payment Proof" style="max-width: 100%; max-height: 100%; object-fit: contain;">
             </div>
         </div>
     </div>
   </div>
-</div>
-<div class="container">
+
   <div class="card">
     <img src="bd2.png" class="site-logo">
     <p>🎯Tangail Club🎯</p>
     <a class="btn" href="https://bdworld.live/" target="_blank">Register BdWorld</a>
   </div>
-    <div class="card">
+  <div class="card">
     <img src="gm.jpg" class="site-logo">
     <p>🎯Tangail Club🎯</p>
     <a class="btn" href="https://gameon24.live/" target="_blank">Register Gameon24</a>
-    </div>
-        <div class="card">
+  </div>
+  <div class="card">
     <img src="bd.jpg" class="site-logo">
     <p>🎯Tangail Club🎯</p>
     <a class="btn" href="https://bdt20.net/" target="_blank">Register Bdt20</a>
-        </div>
-        <div class="card">
+  </div>
+  <div class="card">
     <img src="gl.jpg" class="site-logo">
     <p>🎯Tangail Club🎯</p>
     <a class="btn" href="https://goal90.live/single-category-game" target="_blank">Register Goal90</a>
-    </div>
-    
+  </div>
+</div>
+
 <div class="faq-section">
-<h2>❓(FAQ)</h2>
-<div class="faq-item">
-<div class="faq-question">কিভাবে একাউন্ট খুলবো? <span class="arrow">⬇</span></div>
-<div class="faq-answer">আপনার পছন্দের সাইট (1xBet বা Pro Bet) এর Register বাটনে ক্লিক করে সহজেই একাউন্ট তৈরি করতে পারবেন।</div>
+  <h2>❓ (FAQ)</h2>
+  <div class="faq-item">
+    <div class="faq-question">কিভাবে একাউন্ট খুলবো? <span class="arrow">⬇</span></div>
+    <div class="faq-answer">পছন্দের সাইটের Register বাটনে ক্লিক করে সহজেই একাউন্ট তৈরি করতে পারবেন।</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-question">কিভাবে ডিপোজিট করবো? <span class="arrow">⬇</span></div>
+    <div class="faq-answer">আমাদের Agent এর মাধ্যমে bKash, Nagad বা Rocket দিয়ে সহজে ডিপোজিট করতে পারবেন।</div>
+  </div>
 </div>
 
-<div class="faq-item">
-<div class="faq-question">কিভাবে ডিপোজিট করবো? <span class="arrow">⬇</span></div>
-<div class="faq-answer">আপনি আমাদের Agent এর মাধ্যমে bKash, Nagad বা Rocket দিয়ে সহজে ডিপোজিট করতে পারবেন।</div>
+<div class="contact-section-new">
+  <h2 class="contact-title">📲 যোগাযোগ করুন</h2>
+  <div class="contact-list-wrapper">
+    <a href="https://wa.me/8801826444505" target="_blank" class="contact-item wa-bg">
+        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+        <div class="contact-info"><span class="label">WhatsApp</span><span class="number">01874612969</span></div>
+    </a>
+    <a href="https://t.me/@Tangailclub" target="_blank" class="contact-item tg-bg">
+        <div class="contact-icon"><i class="fab fa-telegram-plane"></i></div>
+        <div class="contact-info"><span class="label">Telegram</span><span class="number">@Tangailclub</span></div>
+    </a>
+  </div>
 </div>
 
-<div class="faq-item">
-<div class="faq-question">কিভাবে টাকা উত্তোলন করবো? <span class="arrow">⬇</span></div>
-<div class="faq-answer">Withdraw request করার পরে Agent এর সাথে যোগাযোগ করলে দ্রুত পেমেন্ট পাবেন।</div>
-</div>
-</div>
-
-    <div class="contact-section-new">
-    <h2 class="contact-title">📲 যোগাযোগ করুন (Contact Us)</h2>
-    <p class="contact-subtitle">যেকোনো প্রয়োজনে সরাসরি আমাদের সাথে যোগাযোগ করুন</p>
-    
-    <div class="contact-list-wrapper">
-        <a href="https://wa.me/8801826444505" target="_blank" class="contact-item wa-bg">
-            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
-            <div class="contact-info">
-                <span class="label">WhatsApp</span>
-                <span class="number">01874612969</span>
-            </div>
-        </a>
-
-        <a href="https://t.me/YOUR_TELEGRAM" target="_blank" class="contact-item tg-bg">
-            <div class="contact-icon"><i class="fab fa-telegram-plane"></i></div>
-            <div class="contact-info">
-                <span class="label">Telegram</span>
-                <span class="number">@Tangailclub</span>
-            </div>
-        </a>
-
-        <a href="tel:01874612969" class="contact-item imo-bg">
-            <div class="contact-icon"><i class="fas fa-comment-dots"></i></div>
-            <div class="contact-info">
-                <span class="label">IMO</span>
-                <span class="number">01874612969</span>
-            </div>
-        </a>
-    </div>
-    </div>
-    
-
-<footer>© 2026 Tangail Club| All Rights Reserved</footer>
+<footer>© 2026 Tangail Club | All Rights Reserved</footer>
 
 <script>
 // FAQ Toggle
@@ -334,28 +252,17 @@ document.querySelectorAll(".faq-question").forEach(function(item){
   item.addEventListener("click", function(){
     const answer = this.nextElementSibling;
     const arrow = this.querySelector(".arrow");
-    if(answer.style.display === "block"){
-      answer.style.display = "none";
-      arrow.style.transform = "rotate(0deg)";
-    }else{
-      answer.style.display = "block";
-      arrow.style.transform = "rotate(180deg)";
-    }
+    answer.style.display = (answer.style.display === "block") ? "none" : "block";
   });
 });
 
 // Slider
 let currentSlide = 0;
 const slides = document.querySelectorAll('#banner-slider .slides > a');
-const totalSlides = slides.length;
-
-function showSlide(index){
-  slides.forEach(slide => slide.classList.remove('active'));
-  slides[index].classList.add('active');
-}
 setInterval(() => {
-  currentSlide = (currentSlide + 1) % totalSlides;
-  showSlide(currentSlide);
+  slides[currentSlide].classList.remove('active');
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].classList.add('active');
 }, 3000);
 </script>
 
